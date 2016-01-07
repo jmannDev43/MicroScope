@@ -1,3 +1,3 @@
-/**
- * Created by Mann on 1/7/16.
- */
+Accounts.ui.config({
+   passwordSignupFields: 'USERNAME_ONLY'
+});

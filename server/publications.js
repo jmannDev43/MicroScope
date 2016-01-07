@@ -1,3 +1,3 @@
-/**
- * Created by Mann on 1/6/16.
- */
+Meteor.publish('posts', function(){
+   return Posts.find();
+});

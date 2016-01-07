@@ -1,3 +1,5 @@
-/**
- * Created by Mann on 1/6/16.
- */
+Template.postsList.helpers({
+   posts: function () {
+       return Posts.find({}, {sort: {submitted: -1}});
+   }
+});

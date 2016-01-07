@@ -1,3 +1,3 @@
-/**
- * Created by Mann on 1/7/16.
- */
+Template.layout.helpers({
+   pageTitle: function() { return Session.get('pageTitle') || 'MicroScope' }
+});
