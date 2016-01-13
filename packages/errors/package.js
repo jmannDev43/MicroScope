@@ -21,7 +21,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('ecmascript');
-  api.use('tinytest');
-  api.use('jmanndev:errors');
-  api.addFiles('errors-tests.js');
+  api.use(['tinytest', 'test-helpers'], 'client');
+  api.use('jmanndev:errors', 'client');
+  api.addFiles('errors-tests.js', 'client');
 });
