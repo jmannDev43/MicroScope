@@ -34,5 +34,16 @@ Template.commentSubmit.events({
                 $body.val('');
             }
         });
+    },
+    'blur #body': function(e, template){
+        var $body = $(e.target).find('[name=body]');
+        var errors = {};
+
+        if (! comment.body) {
+            errors.body = "Please write some content";
+            Session.set('commentSubmitErrors', errors);
+        } else {
+            Session.set('commentSubmitErrors', {});
+        }
     }
 });
